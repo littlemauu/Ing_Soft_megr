@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Eliminar vacante</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <h:form>
+                <h:outputText value="Id:" />
+                <p:inputText value="#{eliminarVacante.idvacante}" placeholder="Idvacante"/>
+                <br/>
+                <p:commandButton value=" Aceptar " action="#{eliminarVacante.eliminarVacante()}" />
+            </h:form>
+
+        </h:body>
+
+    </f:view>
+    
+</html>

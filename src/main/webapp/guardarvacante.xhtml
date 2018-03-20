@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Guardar vacante</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+
+            <h:form>
+                <h:outputText value="Id:" />
+                <p:inputText value="#{guardarVacante.idvacante}" placeholder="Idvacante"/>
+                <br/>
+                <h:outputText value="IdEmpresa:" />
+                <p:inputText value="#{guardarVacante.idEmpresa}" placeholder="IdEmpresa"/>
+                <br/>
+                <h:outputText value="Puesto:" />
+                <p:inputText value="#{guardarVacante.puesto}" placeholder="Puesto"/>
+                <br/>
+                <h:outputText value="Lugar:" />
+                <p:inputText value="#{guardarVacante.lugar}" placeholder="Lugar"/>
+                <br/>
+                <h:outputText value="Salario:" />
+                <p:inputText value="#{guardarVacante.salario}" placeholder="Salario"/>
+                <br/>
+                <h:outputText value="Horario:" />
+                <p:inputText value="#{guardarVacante.horario}" placeholder="Horario"/>
+                <br/>
+                <h:outputText value="Descripción:" />
+                <p:inputText value="#{guardarVacante.descripcion}" placeholder="Descripción"/>
+                <br/>
+                <h:outputText value="Actividades:" />
+                <p:inputText value="#{guardarVacante.actividades}" placeholder="Actividades"/>
+                <br/>
+                <p:commandButton value=" Aceptar " action="#{guardarVacante.guardarVacante()}" />
+            </h:form>
+
+        </h:body>
+
+    </f:view>
+    
+</html>
